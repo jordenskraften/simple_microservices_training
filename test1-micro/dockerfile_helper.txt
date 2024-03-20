@@ -1,0 +1,5 @@
+//билдим такой командой
+docker build -t test1-micro -f micro.dockerfile .
+
+//включаем образ такой командой 
+docker run -d -p 8080:8080 test1-micro

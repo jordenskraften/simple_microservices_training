@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "./generated";
+
+message SimpleMessage {
+  // Определите поля запроса здесь
+  string body = 1;
+} 
+
+service SimpleMessageService {
+    rpc SimpleMessageMethod(SimpleMessage) returns (SimpleMessage);
+}
+ 
